@@ -1,0 +1,87 @@
+/* Frames CSS3 */
+@-webkit-keyframes ckw {
+    0% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes ckw {
+    0% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes cckw {
+    0% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+@-moz-keyframes cckw {
+    0% {
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+/* Шестерни */
+.gear {
+    float: none;
+    position: absolute;
+    text-align: center;
+
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#gear {
+    background: url("gear.png") no-repeat 0 0;
+    height: 50px;
+    left: 31px;
+    top: 45px;
+    width: 50px;
+
+    -moz-animation-name: ckw;
+    -moz-animation-duration: 10s;
+
+    -webkit-animation-name: ckw;
+    -webkit-animation-duration: 10s;
+}
+
+#tick {
+    background: url("tick.png") no-repeat 0 0;
+    height: 50px;
+    left: 31px;
+    top: 45px;
+    width: 50px;
+
+
+
+}
